@@ -12,7 +12,9 @@ $(function() {
     });
 
     $(".shopping-item-delete").click( function(event){
-        alert("Delete button working");
+        $(this)
+        .closest("li")
+        .remove();
     });
 
 });
